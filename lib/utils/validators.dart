@@ -3,7 +3,7 @@
 import 'utils.dart';
 
 abstract class Validator {
-  static email(String? value) {
+  static String? email(String? value) {
     if (!RegExp(AppStrings.emailRegExp).hasMatch((value ?? "").trim()) ||
         (value ?? "").isEmpty) {
       return 'Неверный email';
@@ -12,7 +12,7 @@ abstract class Validator {
     }
   }
 
-  static password(value) {
+  static String? password(value) {
     if (value.length < 3) {
       return 'Слишком короткий';
     }
@@ -24,7 +24,7 @@ abstract class Validator {
     return one == two;
   }
 
-  static name(String name) {
+  static String? name(String name) {
     if (name.length >= 3) {
       return null;
     } else {
@@ -32,7 +32,7 @@ abstract class Validator {
     }
   }
 
-  static phone(String phone) {
+  static String? phone(String phone) {
     if (phone.length < 12) {
       return "Слишком короткий";
     }
@@ -44,9 +44,10 @@ abstract class Validator {
     if (phone.substring(0, 1) != '+') {
       return "Номер начинается с +";
     }
+    return null;
   }
 
-  static code(String code) {
+  static String? code(String code) {
     return code.length != 6 ? "Неправильный формат кода" : null;
   }
 }
