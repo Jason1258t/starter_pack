@@ -118,8 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               style: AppTypography.font12w400,
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  Navigator.pushNamed(
-                                      context, AppRouteNames.recovery);
+
                                 }))
                         ],
                       ),
@@ -147,8 +146,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: AppTypography.font16w600,
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                Navigator.pushNamed(
-                                    context, AppRouteNames.registration);
+
                               }),
                       ])),
                     ],
