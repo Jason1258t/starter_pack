@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:starter_pack/utils/utils.dart';
 
+import 'colors.dart';
+
 class AppAnimations {
   static const circleIndicator = SizedBox(
     width: 20,

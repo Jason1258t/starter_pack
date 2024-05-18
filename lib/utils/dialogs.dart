@@ -1,4 +1,5 @@
-part of 'utils.dart';
+
+import 'package:flutter/material.dart';
 
 class Dialogs {
   static bool open = false;

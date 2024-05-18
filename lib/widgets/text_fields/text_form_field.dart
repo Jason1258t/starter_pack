@@ -48,7 +48,7 @@ class CustomTextFormField extends StatelessWidget {
         if (labelText != null) ...[
           Text(
             labelText!,
-            style: AppTypography.font14w400.copyWith(color: AppColors.black),
+            style: AppTypography.f14w400.copyWith(color: AppColors.black),
           ),
           const SizedBox(
             height: 10,
@@ -70,7 +70,7 @@ class CustomTextFormField extends StatelessWidget {
             keyboardType: keyboardType,
             obscureText: obscured,
             initialValue: initValue,
-            style: AppTypography.font16w500,
+            style: AppTypography.f16w500,
             decoration: InputDecoration(
                 prefixIcon: Padding(
                   padding: const EdgeInsets.only(right: 10),
@@ -91,7 +91,7 @@ class CustomTextFormField extends StatelessWidget {
                 contentPadding: const EdgeInsets.all(2),
                 hintText: hintText,
                 hintStyle:
-                    AppTypography.font16w500.copyWith(color: AppColors.black),
+                    AppTypography.f16w500.copyWith(color: AppColors.black),
                 border: InputBorder.none),
           ),
         ),

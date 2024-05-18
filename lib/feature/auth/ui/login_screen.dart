@@ -115,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         children: [
                           Text.rich(TextSpan(
                               text: 'forgot password',
-                              style: AppTypography.font12w400,
+                              style: AppTypography.f12w400,
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
 
@@ -140,10 +140,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       Text.rich(TextSpan(children: [
                         TextSpan(
                             text: "no account ",
-                            style: AppTypography.font12w400),
+                            style: AppTypography.f12w400),
                         TextSpan(
                             text: 'sign up',
-                            style: AppTypography.font16w600,
+                            style: AppTypography.f16w600,
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:rxdart/rxdart.dart';
+import 'package:starter_pack/utils/enums.dart';
 
-import '../../../utils/utils.dart';
 
 class AuthRepository {
   AuthRepository() {

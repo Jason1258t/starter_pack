@@ -7,7 +7,7 @@ class AppSnackBars {
         elevation: 0,
         content: Text(
           text,
-          style: AppTypography.font14w400,
+          style: AppTypography.f14w400,
         ),
         backgroundColor: AppColors.black,
         shape: const RoundedRectangleBorder(

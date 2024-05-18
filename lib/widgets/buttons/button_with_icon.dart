@@ -38,7 +38,7 @@ class ButtonWithIcon extends StatelessWidget {
                 ),
                 Text(
                   text,
-                  style: AppTypography.font18w500
+                  style: AppTypography.f18w500
                       .copyWith(color: isActive ? Colors.black : Colors.white),
                 ),
               ],
