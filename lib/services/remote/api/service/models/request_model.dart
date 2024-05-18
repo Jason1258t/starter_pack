@@ -6,7 +6,7 @@ class RequestData {
   final String url;
   final Map<String, dynamic>? queryParams;
   final Map<String, dynamic>? data;
-  final VoidCallback? customExceptionHandler;
+  final void Function(DioException)? customExceptionHandler;
 
   @override
   String toString() => '$url\nquery: $queryParams\ndata: $data';

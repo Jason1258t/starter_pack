@@ -3,7 +3,7 @@ class Token {
 
   Token({required this.jwt});
 
-  void setJwt(String newJwt) => jwt = newJwt;
+  void refresh(String newJwt) => jwt = newJwt;
 
   Token.fromJson(Map<String, dynamic> json) : jwt = json['jwt'];
 

@@ -4,7 +4,9 @@ import 'package:rxdart/rxdart.dart';
 import '../../../utils/utils.dart';
 
 class AuthRepository {
-  AuthRepository() {}
+  AuthRepository() {
+
+  }
 
   BehaviorSubject<AppStateEnum> appState =
       BehaviorSubject.seeded(AppStateEnum.wait);

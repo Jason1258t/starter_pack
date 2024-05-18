@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:starter_pack/services/preferences.dart';
+import 'package:starter_pack/services/remote/api/api_service.dart';
 
 import 'app.dart';
 import 'feature/auth/bloc/app/app_cubit.dart';
 import 'feature/auth/bloc/auth/auth_cubit.dart';
 import 'feature/auth/data/auth_repository.dart';
+import 'services/local/preferences/preferences.dart';
 
-PreferencesService preferencesService = PreferencesService();
+final PreferencesService preferencesService = PreferencesService();
+final ApiService apiService =
+    ApiService(preferencesService: preferencesService);
 
 class MyRepositoryProviders extends StatelessWidget {
   const MyRepositoryProviders({Key? key}) : super(key: key);
@@ -40,9 +43,7 @@ class MyBlocProviders extends StatelessWidget {
           lazy: false,
         ),
         BlocProvider(
-            create: (context) => AppCubit(
-                authRepository),
-            lazy: false),
+            create: (context) => AppCubit(authRepository), lazy: false),
       ],
       child: const MyApp(),
     );
