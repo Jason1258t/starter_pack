@@ -7,14 +7,14 @@ class ButtonBack extends StatelessWidget {
 
   const ButtonBack({super.key, required this.onTap, this.isDark = true, this.backgroundColor});
 
-  final Function() onTap;
+  final Function()? onTap;
   final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(100),
-      onTap: onTap,
+      onTap: onTap ?? () => Navigator.pop(context),
       child: Container(
         height: 40,
         width: 40,

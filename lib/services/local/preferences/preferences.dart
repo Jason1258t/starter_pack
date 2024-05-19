@@ -32,6 +32,4 @@ class PreferencesService {
   Future logout() async {
     _prefs.clear();
   }
-
-// ---------------------------------------------------------------
 }
